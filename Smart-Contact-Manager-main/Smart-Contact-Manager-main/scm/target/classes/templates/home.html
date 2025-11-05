@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  xmlns:th="http://www.thymeleaf.org"
+  th:replace="~{base::parent(~{::#content},~{::title},~{})}"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div id="content" class="border">
+      <!-- Banner Section -->
+      <section
+        id="home"
+        class="banner text-gray-100 py-20 animate__animated animate__fadeInDown header dark:bg-gray-800"
+      >
+        <div class="container cont-text mx-auto text-center">
+          <h2 class="text-4xl font-bold mb-4">
+            Welcome to Smart Contact Manager
+          </h2>
+          <p class="text-lg mb-8">
+            Manage all your contacts effortlessly and securely in one place.
+          </p>
+          <a
+            th:href="@{'/signup'}"
+            class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-400 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 transition duration-300"
+            >Get Started</a
+          >
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section
+        id="about"
+        class="mx-auto pt-20 bg-gray-100 shadow-lg dark:bg-gray-800 dark:shadow-gray-700"
+      >
+        <h2
+          class="text-5xl font-bold text-gray-800 dark:text-gray-100 mb-10 text-center"
+        >
+          About
+        </h2>
+        <div class="bg-gray-200 dark:bg-gray-700 p-4 rounded-lg mx-0.5">
+          <p
+            class="text-gray-600 dark:text-gray-300 text-lg text-center mb-6 font-bold"
+          >
+            Smart Contact Manager is a user-friendly application designed to
+            help individuals <br> and businesses efficiently organize and manage
+            their contacts.
+          </p>
+
+          <div class="flex items-center justify-center transition duration-300 transform hover:scale-105">
+            <div
+              class="p-6 bg-gray-100 dark:bg-gray-800 shadow-lg rounded-2xl border border-gray-200 dark:border-gray-600"
+            >
+              <h3
+                class="text-2xl font-semibold text-gray-700 dark:text-gray-200 mb-3 text-center"
+              >
+                Key Features:
+              </h3>
+              <ul
+                class="list-disc pl-6 space-y-2 text-gray-600 dark:text-gray-300"
+              >
+                <li>
+                  <strong class="text-gray-800 dark:text-gray-100"
+                    >Secure Contact Storage</strong
+                  >
+                  – Save names, phone numbers, emails, and addresses in a
+                  well-organized database.
+                </li>
+                <li>
+                  <strong class="text-gray-800 dark:text-gray-100"
+                    >User Authentication</strong
+                  >
+                  – Secure login and user-based access to ensure privacy.
+                </li>
+                <li>
+                  <strong class="text-gray-800 dark:text-gray-100"
+                    >Search & Filter</strong
+                  >
+                  – Quickly find contacts with an intuitive search and filtering
+                  system.
+                </li>
+                <li>
+                  <strong class="text-gray-800 dark:text-gray-100"
+                    >Responsive & Intuitive UI</strong
+                  >
+                  – Designed for ease of use on both desktop and mobile devices.
+                </li>
+                <li>
+                  <strong class="text-gray-800 dark:text-gray-100"
+                    >Cloud Integration</strong
+                  >
+                  – Backup and sync contacts across multiple devices (if
+                  applicable).
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <p
+            class="text-gray-600 dark:text-gray-300 mt-6 text-center font-bold"
+          >
+            Built with modern web technologies, Smart Contact Manager
+            prioritizes security, efficiency, and user experience.
+          </p>
+        </div>
+      </section>
+      <!-- Services Section -->
+      <section id="services" class="py-20 bg-gray-100 dark:bg-gray-800">
+        <div class="container mx-auto text-center">
+          <h2
+            class="text-5xl font-bold mb-12 animate__animated animate__fadeInUp"
+          >
+            Services
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div
+              class="p-6 bg-gray-200 md:ml-6 dark:bg-gray-700 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105"
+            >
+              <i class="fas fa-address-book text-blue-600 text-4xl mb-4"></i>
+              <h3 class="text-xl font-semibold mb-2">
+                Easy Contact Management
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300">
+                Add, edit, and organize your contacts in a user-friendly
+                interface.
+              </p>
+            </div>
+            <div
+              class="p-6 bg-gray-200 dark:bg-gray-700 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105"
+            >
+              <i class="fas fa-lock text-blue-600 text-4xl mb-4"></i>
+              <h3 class="text-xl font-semibold mb-2">Secure Storage</h3>
+              <p class="text-gray-600 dark:text-gray-300">
+                Your data is protected with top-level encryption and security
+                measures.
+              </p>
+            </div>
+            <div
+              class="p-6 bg-gray-200 md:mr-6 dark:bg-gray-700 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105"
+            >
+              <i class="fas fa-globe text-blue-600 text-4xl mb-4"></i>
+              <h3 class="text-xl font-semibold mb-2">24/7 Access</h3>
+              <p class="text-gray-600 dark:text-gray-300">
+                Access your contacts anytime, anywhere from any device.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action Section -->
+      <section
+        class="banner2 text-gray-100 py-20 animate__animated animate__fadeInUp"
+      >
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-4">
+            Ready to Manage Your Contacts?
+          </h2>
+          <p class="text-lg mb-8">
+            Sign up today and experience the easiest way to manage your
+            contacts.
+          </p>
+          <a
+            th:href="@{'/signup'}"
+            class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-400 transition duration-300"
+            >Create an Account</a
+          >
+        </div>
+      </section>
+
+      <!-- Feedback Section -->
+      <section class="py-20 bg-gray-100 dark:bg-gray-800">
+        <div class="container mx-auto text-center">
+          <h2
+            class="text-5xl font-bold mb-12 animate__animated animate__fadeInUp"
+          >
+            What Our Users Say
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div
+              class="p-6 md:ml-6 bg-gray-200 dark:bg-gray-700 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105"
+            >
+              <p class="text-gray-600 dark:text-gray-300 italic">
+                "Contact Manager has changed the way I organize my contacts.
+                It's fast, secure, and incredibly easy to use!"
+              </p>
+              <h4 class="text-lg font-semibold mt-4">- Rahul Singh</h4>
+            </div>
+            <div
+              class="p-6 md:mr-6 bg-gray-200 dark:bg-gray-700 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105"
+            >
+              <p class="text-gray-600 dark:text-gray-300 italic">
+                "A fantastic app with great features! I love the 24/7 access and
+                secure storage options."
+              </p>
+              <h4 class="text-lg font-semibold mt-4">- Simran Aggarwal</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section
+        id="contact"
+        class="py-20 bg-gray-200 dark:bg-gray-800 animate__animated animate__fadeInUp"
+      >
+        <div class="container mx-auto text-center">
+          <h2 class="text-5xl font-bold mb-12">Get in Touch</h2>
+          
+          <form th:action="@{'/query'}"
+          th:object="${queryForm}"
+          method="post"
+          class="max-w-lg mx-auto">
+          <div data-th-replace="~{message::messagebox}"></div>
+            <input
+              id="name"
+              th:field="*{name}"
+              type="text"
+              placeholder="Your Name"
+              class="w-full px-4 py-2 mb-4 border border-gray-300 dark:border-gray-600 rounded bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100"
+              required
+            />
+            <input
+              type="email"
+              th:field="*{email}"
+              id="email"
+              placeholder="Your Email"
+              class="w-full px-4 py-2 mb-4 border border-gray-300 dark:border-gray-600 rounded bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100"
+              required
+            />
+            <textarea
+              placeholder="Your Message"
+              th:field="*{about}"
+              id="about"
+              class="w-full px-4 py-2 mb-4 border border-gray-300 dark:border-gray-600 rounded bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100"
+              required
+            ></textarea>
+            <button
+              type="submit"
+              class="bg-blue-600 text-white px-6 py-3 rounded font-semibold hover:bg-blue-800 transition duration-300"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+          <p>&copy; 2025 Contact Manager. All rights reserved.</p>
+          <p>
+            Follow us on <a href="#" class="text-blue-400">Facebook</a>,
+            <a href="#" class="text-blue-400">Twitter</a>, and
+            <a href="#" class="text-blue-400">Instagram</a>.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
